@@ -1,0 +1,15 @@
+{
+    "name": "tea-properties"
+  , "repo": "qualiancy/tea-properties"
+  , "version": "0.0.0"
+  , "description": "Deep object inspection and modification given a stringed path."
+  , "license": "MIT"
+  , "keywords": [
+    ]
+  , "main": "lib/properties.js"
+  , "scripts": [
+        "lib/properties.js"
+    ]
+  , "dependencies": {}
+  , "development": {}
+}

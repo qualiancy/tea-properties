@@ -1,0 +1,28 @@
+{
+    "name": "tea-properties"
+  , "version": "0.0.0"
+  , "description": "Deep object inspection and modification given a stringed path."
+  , "author": "Jake Luer <jake@qualiancy.com> (http://qualiancy.com)"
+  , "license": "MIT"
+  , "keywords": [
+    ]
+  , "repository": {
+        "type": "git"
+      , "url": "git@github.com:qualiancy/tea-properties.git"
+    }
+  , "engines": {
+      "node": "*"
+    }
+  , "main": "./index"
+  , "scripts": {
+      "test": "make test"
+    }
+  , "dependencies": {
+    }
+  , "devDependencies": {
+        "chai": "*"
+      , "component": "*"
+      , "mocha": "*"
+      , "mocha-phantomjs": "*"
+    }
+}

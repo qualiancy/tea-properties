@@ -1,7 +1,7 @@
 {
     "name": "tea-properties"
   , "repo": "qualiancy/tea-properties"
-  , "version": "0.0.0"
+  , "version": "0.1.0"
   , "description": "Deep object inspection and modification given a stringed path."
   , "license": "MIT"
   , "keywords": [

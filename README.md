@@ -1,4 +1,4 @@
-# tea-properties
+# tea-properties [![Build Status](https://secure.travis-ci.org/qualiancy/tea-properties.png?branch=master)](https://travis-ci.org/qualiancy/tea-properties)
 
 > Deep object inspection and modification given a stringed path.
 

@@ -16,6 +16,70 @@
 
     $ component install qualiancy/tea-properties
 
+## Usage
+
+### .get(obj, path)
+
+* **@param** _{Object}_ object 
+* **@param** _{String}_ path 
+* **@return** _{Object}_  value or `undefined`
+
+Retrieve the value in an object given a string path.
+
+```js
+var obj = {
+    prop1: {
+        arr: ['a', 'b', 'c']
+      , str: 'Hello'
+    }
+  , prop2: {
+        arr: [ { nested: 'Universe' } ]
+      , str: 'Hello again!'
+    }
+};
+```
+
+The following would be the results.
+
+```js
+var properties = require('tea-properties');
+properties.get(obj, 'prop1.str'); // Hello
+properties.get(obj, 'prop1.att[2]'); // b
+properties.get(obj, 'prop2.arr[0].nested'); // Universe
+```
+
+
+### .set(path, value, object)
+
+* **@param** _{Object}_ object 
+* **@param** _{String}_ path 
+* **@param** _{Mixed}_ value 
+
+Define the value in an object at a given string path.
+
+```js
+var obj = {
+    prop1: {
+        arr: ['a', 'b', 'c']
+      , str: 'Hello'
+    }
+  , prop2: {
+        arr: [ { nested: 'Universe' } ]
+      , str: 'Hello again!'
+    }
+};
+```
+
+The following would be acceptable.
+
+```js
+var properties = require('tea-properties');
+properties.set(obj, 'prop1.str', 'Hello Universe!');
+properties.set(obj, 'prop1.arr[2]', 'B');
+properties.set(obj, 'prop2.arr[0].nested.value', { hello: 'universe' });
+```
+
+
 ## License
 
 (The MIT License)

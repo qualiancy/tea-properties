@@ -48,4 +48,17 @@ describe('.set(obj, path, value)', function () {
     properties.set(obj, 'hello[2]', 3);
     obj.should.deep.equal({ hello: [ 1, 2, 3 ] });
   });
+
+  it('should interpret a stringed array index as a property', function () {
+    var obj = { hello: {} };
+    properties.set(obj, 'hello[world][universe]', 3);
+    obj.should.deep.equal({ hello: { world: { universe: 3 } } });
+  });
+
+  it.skip('should handle a set of by stringed key to an array', function () {
+    var obj = {};
+    properties.set(obj, 'item[0]', 'hello');
+    obj.should.deep.equal({ item: [ 'hello' ] });
+    properties.set(obj, 'item.hello', 'universe');
+  });
 });

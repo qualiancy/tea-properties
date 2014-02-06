@@ -6,9 +6,9 @@
   , "license": "MIT"
   , "keywords": [
     ]
-  , "main": "lib/properties.js"
+  , "main": "lib/index.js"
   , "scripts": [
-        "lib/properties.js"
+        "lib/index.js"
     ]
   , "dependencies": {}
   , "development": {}

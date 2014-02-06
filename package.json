@@ -13,7 +13,7 @@
   , "engines": {
       "node": "*"
     }
-  , "main": "./index"
+  , "main": "lib/index"
   , "scripts": {
       "test": "make test"
     }
